@@ -9,21 +9,21 @@ app.use(express.json());
 app.post('/register', (req: Request, res: Response) => {
     const { username, password } = req.body;
     // Logika untuk register user
-    res.send('User registered');
+    res.send('User registered success');
 });
 
 // Endpoint untuk login user
 app.post('/login', (req: Request, res: Response) => {
     const { username, password } = req.body;
     // Logika untuk login user
-    res.send('User logged in');
+    res.send('User logged in success');
 });
 
 // Endpoint untuk menambah produk
 app.post('/products', (req: Request, res: Response) => {
     const { name, price } = req.body;
     // Logika untuk menambah produk
-    res.send('Product added');
+    res.send('Product added success');
 });
 
 // Endpoint untuk mendapatkan semua produk
